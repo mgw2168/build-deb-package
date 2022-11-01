@@ -13,8 +13,9 @@
 
 ## Test:
 ```shell
+# install
 sudo dpkg -i <package>
-# or
+# uninstall
 sudo dpkg -r <appname>
 ```
 
