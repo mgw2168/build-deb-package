@@ -1,0 +1,14 @@
+[Unit]
+Description=Spring Starter
+After=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/var/opt/spring-starter
+ExecStart=/usr/bin/java -jar /usr/local/spring-starter/gs-spring-boot.jar
+Restart=on-abort
+User=spring-starter
+Group=spring-starter
+
+[Install]
+WantedBy=multi-user.target
